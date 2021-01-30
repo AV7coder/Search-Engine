@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPS SEARCHITON</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='style.css')}}">
+    </head>
+    <body>
+        <div class="title">
+            <h2   style="backdrop-filter:blur(20px);">IPS SEARCHITON</h2>
+        </div>
+        <form action="/" method="POST">
+            <label for="search"><span>Search:</span></label>
+            <input type="text" name="user_search" id="search">
+            <button type="submit"><img src="{{url_for('static', filename='search.jpg')}}" alt=""></button>
+        </form>
+        <hr>
+        {%if request.method=='POST'%}
+            {%for things in data.items()%}
+                <h1>{{things.1}}</h1>
+            {%endfor%}
+        {%endif%}
+    </body>
+</html>

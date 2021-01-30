@@ -1,0 +1,46 @@
+body {
+  text-align: center;
+  background: linear-gradient(rgb(6, 6, 37), rgba(184, 130, 197, 0.76), orange);
+  min-height: 600px;
+}
+hr {
+  height: 50px;
+  width: 350px;
+  background: linear-gradient(rgb(255, 0, 0), rgb(184, 151, 151));
+  border-radius: 75px;
+}
+span {
+  color: rgb(255, 255, 0);
+  font-size: 70px;
+}
+h1 {
+  color: rgb(255, 0, 0);
+}
+input {
+  padding: 10px;
+  color: rgb(255, 0, 0);
+}
+button img {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+}
+button {
+  background-color: BLACK;
+  border-radius: 50%;
+}
+h1:hover {
+  color: rgb(26, 46, 3);
+}
+span:hover {
+  color: aquamarine;
+}
+hr:hover {
+  background: linear-gradient(50deg, rgb(0, 132, 255), rgb(28, 0, 92));
+}
+.title {
+  backdrop-filter: blur(20px);
+}
+h2 {
+  color: rgb(68, 0, 255);
+}
