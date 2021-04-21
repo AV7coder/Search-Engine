@@ -9,7 +9,7 @@ def index():
         search_text = request.form.get('user_search')
         result = wikipedia.summary(search_text, sentences=100)
         mainResult.append(result)
-        for i in search(search_text, tld="co.in", num=1, stop=5, pause=1): 
+        for i in search(search_text): 
             mainResult.append(i)   
         displayResult = {
             "1":mainResult[0],
